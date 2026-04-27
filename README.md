@@ -2,12 +2,11 @@
 
 基于 [NousResearch hermes-agent](https://github.com/NousResearch/hermes-agent) 的中文文档与社区入口,部署在 `zh.u-hermes.org`(`u-hermes.org` 主域子域)。
 
-## 站点定位
+## 站点定位(终版,3 站)
 
 - `u-hermes.org` —— 商业版 U-Hermes 马盘官网(卖货)
 - `study.u-hermes.org` —— 客户售后教程(已买盘的用户手册)
-- `dev.u-hermes.org` —— 开发者文档(hermes-agent-zh GitHub Pages)
-- **`zh.u-hermes.org`(本站)** —— 中文社区门户 + 实体书全文 + 技能市场
+- **`zh.u-hermes.org`(本站)** —— 中文社区门户 + 实体书全文 + 技能市场 + 开发者文档
 
 ## 本地开发
 
