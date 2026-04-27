@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run docs:build",
+  "outputDirectory": ".vitepress/dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/", "destination": "/zh/", "permanent": false },
+    { "source": "/github", "destination": "https://github.com/NousResearch/hermes-agent", "permanent": false },
+    { "source": "/upstream", "destination": "https://github.com/NousResearch/hermes-agent", "permanent": false },
+    { "source": "/buy", "destination": "https://u-hermes.org/#buy", "permanent": false },
+    { "source": "/oss", "destination": "https://github.com/dongsheng123132/u-hermes", "permanent": false },
+    { "source": "/discussions", "destination": "https://github.com/dongsheng123132/u-hermes/discussions", "permanent": false }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}

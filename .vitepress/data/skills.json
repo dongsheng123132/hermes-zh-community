@@ -1,0 +1,134 @@
+{
+  "version": "1",
+  "updated": "2026-04-26",
+  "categories": [
+    { "id": "official", "name": "官方", "color": "#f97316" },
+    { "id": "certified", "name": "认证", "color": "#3b82f6" },
+    { "id": "community", "name": "社区", "color": "#71717a" }
+  ],
+  "skills": [
+    {
+      "skill_id": "shell-toolkit",
+      "name": "Shell 工具集",
+      "category": "official",
+      "author": "NousResearch",
+      "author_url": "https://github.com/NousResearch",
+      "version": "0.1.0",
+      "description": "执行 shell 命令、读取标准输出/错误、按行返回结果。Hermes Agent 最常用的内置工具,所有发行版默认装。",
+      "install_cmd": "# 内置,无需额外安装",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "tags": ["shell", "core", "builtin"]
+    },
+    {
+      "skill_id": "browser-playwright",
+      "name": "Playwright 浏览器",
+      "category": "official",
+      "author": "NousResearch",
+      "version": "0.2.0",
+      "description": "用 Playwright 控制 Chromium / Firefox / WebKit 做网页自动化:点击、输入、截屏、抓取、SPA 导航。",
+      "install_cmd": "pip install hermes-agent[browser]\nplaywright install chromium",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "tags": ["browser", "automation", "playwright"]
+    },
+    {
+      "skill_id": "file-io",
+      "name": "文件读写",
+      "category": "official",
+      "author": "NousResearch",
+      "version": "0.1.0",
+      "description": "读、写、追加、列出本地文件。支持文本/二进制,带路径白名单防止越界。",
+      "install_cmd": "# 内置,无需额外安装",
+      "tags": ["file", "core", "builtin"]
+    },
+    {
+      "skill_id": "python-repl",
+      "name": "Python REPL",
+      "category": "official",
+      "author": "NousResearch",
+      "version": "0.1.0",
+      "description": "在隔离的 Python 子进程里跑代码,做数据处理、可视化、科学计算。",
+      "install_cmd": "# 内置,无需额外安装",
+      "tags": ["python", "compute", "builtin"]
+    },
+    {
+      "skill_id": "http-fetch",
+      "name": "HTTP 抓取",
+      "category": "official",
+      "author": "NousResearch",
+      "version": "0.1.0",
+      "description": "用 httpx 拉网页 / API,自动处理代理、超时、JSON 解析。",
+      "install_cmd": "# 内置,无需额外安装",
+      "tags": ["http", "core", "builtin"]
+    },
+    {
+      "skill_id": "memory-store",
+      "name": "持久记忆",
+      "category": "official",
+      "author": "NousResearch",
+      "version": "0.1.0",
+      "description": "把对话片段写进本地 SQLite,后续会话可以引用。U 盘版直接放在 `.u-hermes/data/`。",
+      "install_cmd": "# 内置,无需额外安装",
+      "tags": ["memory", "core", "builtin"]
+    },
+    {
+      "skill_id": "wechat-bot",
+      "name": "微信机器人",
+      "category": "certified",
+      "author": "U-Hermes 中文社区",
+      "version": "0.1.0",
+      "description": "通过 wxauto / hook 接管 PC 微信,把 hermes-agent 当作微信助手回消息。仅 Windows。",
+      "install_cmd": "pip install hermes-skill-wechat\nhermes skill register wechat",
+      "tags": ["wechat", "im", "windows"]
+    },
+    {
+      "skill_id": "feishu-bot",
+      "name": "飞书机器人",
+      "category": "certified",
+      "author": "U-Hermes 中文社区",
+      "version": "0.1.0",
+      "description": "把 hermes-agent 接入飞书自建应用,在群里 @ 它写代码、查文档、跑 Shell。",
+      "install_cmd": "pip install hermes-skill-feishu\nhermes skill register feishu",
+      "tags": ["feishu", "im", "lark"]
+    },
+    {
+      "skill_id": "deepseek-tuner",
+      "name": "DeepSeek 调优",
+      "category": "community",
+      "author": "社区贡献",
+      "version": "0.0.3",
+      "description": "针对 DeepSeek-Chat / DeepSeek-Reasoner 的 prompt 模板,提升中文上下文长度利用率。",
+      "install_cmd": "hermes skill install deepseek-tuner",
+      "tags": ["deepseek", "prompt", "tuning"]
+    },
+    {
+      "skill_id": "ollama-router",
+      "name": "Ollama 路由",
+      "category": "community",
+      "author": "社区贡献",
+      "version": "0.0.2",
+      "description": "在多个本地 ollama 实例之间根据任务类型自动路由(代码 → DeepSeek-R1,聊天 → Qwen)。",
+      "install_cmd": "hermes skill install ollama-router",
+      "tags": ["ollama", "router", "local"]
+    },
+    {
+      "skill_id": "git-helper",
+      "name": "Git 助手",
+      "category": "community",
+      "author": "社区贡献",
+      "version": "0.0.1",
+      "description": "Git 仓库状态查询、智能 commit message 生成、PR 描述总结、cherry-pick 助手。",
+      "install_cmd": "hermes skill install git-helper",
+      "tags": ["git", "dev"]
+    },
+    {
+      "skill_id": "markdown-blog",
+      "name": "Markdown 博客发布",
+      "category": "community",
+      "author": "社区贡献",
+      "version": "0.0.1",
+      "description": "把当前对话整理成 Markdown 博客文章,自动生成标题、摘要、tag、front-matter。",
+      "install_cmd": "hermes skill install markdown-blog",
+      "tags": ["markdown", "blog", "writing"]
+    }
+  ]
+}

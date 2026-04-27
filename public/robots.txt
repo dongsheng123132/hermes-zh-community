@@ -1,0 +1,23 @@
+# Hermes 中文社区 - zh.u-hermes.org
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.vitepress/
+
+# 中文搜索引擎专用
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: GoogleBot
+Allow: /
+
+Sitemap: https://zh.u-hermes.org/sitemap.xml

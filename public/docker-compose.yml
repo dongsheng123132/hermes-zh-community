@@ -1,0 +1,31 @@
+# Hermes 中文社区 Docker Compose 模板
+# 用法:
+#   curl -fsSL https://hermes.org.cn/docker-compose.yml -o docker-compose.yml
+#   编辑下面的 environment 填 API Key
+#   docker compose up -d
+
+services:
+  hermes:
+    image: ghcr.io/dongsheng123132/hermes-agent:latest
+    container_name: hermes-agent
+    restart: unless-stopped
+    ports:
+      - "8642:8642"   # Gateway API
+      - "8648:8648"   # Web UI
+    volumes:
+      - ./data:/data
+    environment:
+      # 至少取消一行 *_API_KEY 并填 key
+      # - DEEPSEEK_API_KEY=sk-xxx
+      # - DASHSCOPE_API_KEY=sk-xxx
+      # - OPENAI_API_KEY=sk-xxx
+      # 本地 Ollama(需要 host.docker.internal 或 --network host)
+      # - OPENAI_API_KEY=ollama
+      # - OPENAI_BASE_URL=http://host.docker.internal:11434/v1
+
+      # 必加:回环白名单
+      - NO_PROXY=127.0.0.1,localhost,::1
+      - no_proxy=127.0.0.1,localhost,::1
+
+      # 数据目录
+      - HERMES_HOME=/data

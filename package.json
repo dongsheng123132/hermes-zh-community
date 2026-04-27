@@ -1,0 +1,18 @@
+{
+  "name": "hermes-zh-community",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "U-Hermes 中文社区站点 — 基于 NousResearch hermes-agent 的中文文档与社区入口",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "lint:secrets": "node scripts/check-secrets.mjs",
+    "lint:skills": "node scripts/validate-skills.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0",
+    "vue": "^3.5.13"
+  }
+}
