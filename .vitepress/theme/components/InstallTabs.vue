@@ -49,7 +49,7 @@ docker run -d -p 8642:8642 -p 8648:8648 \\
     id: 'usb',
     label: 'U 盘绿色版',
     cmd: `# 商业 U 盘成品(¥199 起,Windows)
-# 淘宝 / 拼多多 / 抖音搜 "U-Hermes 马盘"
+# 淘宝搜 "U-Hermes 马盘"
 # 收到 U 盘后:插上,双击 X:\\U-Hermes\\启动 U-Hermes.bat`,
   },
 ]

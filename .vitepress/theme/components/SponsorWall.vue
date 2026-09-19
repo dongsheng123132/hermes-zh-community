@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const links = [
-  { kind: '商业 U 盘', label: '淘宝', url: 'https://e.tb.cn/h.ij8LYYB0cZPkNHw?tk=FMo05XEJYk0' },
-  { kind: '商业 U 盘', label: '拼多多', url: 'https://mobile.yangkeduo.com/goods1.html?ps=WaQeS00tDn' },
-  { kind: '商业 U 盘', label: '抖音', url: 'https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3814862440735309865&origin_type=604' },
+  { kind: '商业 U 盘', label: '淘宝', url: 'https://e.tb.cn/h.8G5SzX1vqFQLjTf?tk=zf7ZT92nu4j' },
   { kind: '上游项目', label: 'NousResearch/hermes-agent', url: 'https://github.com/NousResearch/hermes-agent' },
   { kind: '中文 fork', label: 'dongsheng123132/u-hermes', url: 'https://github.com/dongsheng123132/u-hermes' },
   { kind: '商业站', label: 'u-hermes.org', url: 'https://u-hermes.org' },

@@ -23,9 +23,7 @@
 
 | 平台 | 链接 |
 |---|---|
-| 淘宝 | [打开](https://e.tb.cn/h.ij8LYYB0cZPkNHw?tk=FMo05XEJYk0) |
-| 拼多多 | [打开](https://mobile.yangkeduo.com/goods1.html?ps=WaQeS00tDn) |
-| 抖音 | [打开](https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3814862440735309865&origin_type=604) |
+| 淘宝 | [打开](https://e.tb.cn/h.8G5SzX1vqFQLjTf?tk=zf7ZT92nu4j) |
 | 商业站 | [u-hermes.org](https://u-hermes.org) |
 
 ## 使用流程
